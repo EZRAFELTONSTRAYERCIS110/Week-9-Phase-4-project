@@ -1,0 +1,3 @@
+Ezra Felton|happy|Admin
+Mark Stone|Magic|User
+Josiah|Gold|Admin

@@ -4,7 +4,6 @@ from datetime import datetime
 
 
 
-################################################################################
 def CreateUsers():
     print('##### Create users, passwords, and roles #####')
     UserFile = open("Users.txt", "a+")
@@ -55,8 +54,6 @@ def printuserinfo():
         print("User Name: ", username, " Password: ", userpassword, " Role: ", userrole)
 
 
-############################################################################################
-
 def Login():
     # read login information and store in a list
     UserFile = open("Users.txt", "r")
@@ -75,7 +72,6 @@ def Login():
     return UserRole, UserName
 
 
-#########################################################################################
 def GetEmpName():
     empname = input("Enter employee name: ")
     return empname
@@ -173,8 +169,7 @@ def PrintTotals(EmpTotals):
 
 
 if __name__ == "__main__":
-    ##################################################
-    CreateUsers()
+        CreateUsers()
     print()
     print("##### Data Entry #####")
     UserRole, UserName = Login()
@@ -184,8 +179,7 @@ if __name__ == "__main__":
         print(UserName, " is invalid.")
     else:
         # only admin users can enter data
-        if (UserRole.upper() == "ADMIN"):
-            ###############################################
+        if (UserRole.upper() == "ADMIN"):            
             EmpFile = open("Employees.txt", "a+")
             while True:
                 empname = GetEmpName()
